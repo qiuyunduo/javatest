@@ -1,0 +1,52 @@
+实现线程的几种方式？
+继承Thread
+实现RunnAble
+实现Callable 又返回值
+线程池
+
+传统两种方式的区别
+实现Runnable可以共享数据
+在一个类已继承其他类的情况，只能实现Runnable
+Runnable是面向接口编程，实现数据和业务分离
+
+
+线程的生命周期
+新建　－－＞ Thread t = new Thread()
+就绪  --->  t.start()
+运行  --->  run() 差cpu,yield方法，状态变为就绪
+阻塞　--->  join,io,sleep
+死亡  --->  stop,iterrupt
+
+join, 有t1,t2,t3三个线程，要求线程的运行顺序为t2,t1,t3
+Thread t1 = new Thread("t1");
+Thread t2 = new Thread("t2");
+Thread t3 = new Thread("t3");
+
+t1.start();
+t2.start();
+t3.start();
+
+t1.join();
+t2.join();
+t3.join();
+
+sleep和wait区别
+Sleep和yield区别
+
+同步
+线程安全：　多个线程在并发执行过程中，都需要操作共享数据，共享数据出现错误
+
+卖票卖出－１
+
+存钱，　各存１００，２００，３００，３００
+
+传统解决数据同步，同步代码块和同步方法
+public sychronized void sale(){}
+
+public void sale(){
+    sychronized(this){
+    for(i = 0; i < 6; i++)
+        if(tickets > 0)
+            System.out.println(""+tickets--);
+            }
+}
