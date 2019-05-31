@@ -27,8 +27,8 @@ public class MaoPsort {
             System.out.print(arrary[i]+" ");
         }
         System.out.println();
-//        MSort(arrary);
-                Arrays.sort(arrary);
+        MSort(arrary);
+        Arrays.sort(arrary);
         for(int i = 0; i < arrary.length; i++){
             System.out.print(arrary[i]+" ");
         }

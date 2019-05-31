@@ -1,11 +1,8 @@
 package arraysort;
 
-import java.util.ArrayList;
-import java.util.Stack;
-
 /**
  * @Author: qiuyunduo
- * @Description: null
+ * @Description: 利用打表进行对指定大小范围内的数字进行排序
  * @Date: Created in 上午8:53 18-6-5
  * @Modified: null
  */

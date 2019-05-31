@@ -2,7 +2,7 @@ package algorithmic;
 
 /**
  * @Author: qiuyunduo
- * @Description: null
+ * @Description: n皇后问题求解，递归求解
  * @Date: Created in 上午11:06 18-6-11
  * @Modified: null
  */

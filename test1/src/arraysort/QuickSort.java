@@ -41,7 +41,7 @@ public class QuickSort {
         if(r > right) QSort(arrary,right+1,r);
     }
     public static void main(String[] args) {
-        int[] arrary = {20,14};
+        int[] arrary = {20,213,23,41,2,34,5,6,7,3,123,4,14};
         QSort(arrary,0,arrary.length-1);
     }
 }

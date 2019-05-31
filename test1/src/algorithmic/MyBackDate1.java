@@ -1,8 +1,5 @@
 package algorithmic;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * @Author: qiuyunduo
  * @Description: null
@@ -37,7 +34,7 @@ public class MyBackDate1 {
 
     public static void main(String[] args) {
         long st = System.currentTimeMillis();
-        MyBackDate1 myBackDate1 = new MyBackDate1(16);
+        MyBackDate1 myBackDate1 = new MyBackDate1(8);
         myBackDate1.Permutation(0,0,0);
         System.out.println(myBackDate1.counts);
         long ed = System.currentTimeMillis();

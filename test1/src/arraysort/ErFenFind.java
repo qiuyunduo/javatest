@@ -15,18 +15,22 @@ public class ErFenFind {
             return middle;
         }
 
-        if(arrary[middle] > number){
-            index = EFfind(arrary,start,middle-1,number);
-        }
-        if(arrary[middle] < number){
-            index = EFfind(arrary,middle+1,end,number);
+        if(start <= end) {
+            if (arrary[middle] > number) {
+                index = EFfind(arrary, start, middle - 1, number);
+            }
+            if (arrary[middle] < number) {
+                index = EFfind(arrary, middle + 1, end, number);
+            }
+        } else {
+            return -1;
         }
         return index;
     }
 
     public static void main(String[] args) {
         int[] arrary = {1,2,3,4,5,6,7,8,9,10,48,92,103,483,893};
-        int a = EFfind(arrary,0,arrary.length-1,100);
+        int a = EFfind(arrary,0,arrary.length-1,123);
         System.out.println(a);
     }
 }

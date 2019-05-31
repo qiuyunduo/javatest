@@ -2,7 +2,7 @@ package testvm;
 
 /**
  * @Author: qiuyunduo
- * @Description: null
+ * @Description: 获取一段代码执行的时间
  * @Date: Created in 下午8:30 18-6-6
  * @Modified: null
  */
@@ -13,7 +13,7 @@ public class vmposition {
     }
     public static void main(String[] args) {
         long st = System.currentTimeMillis();
-        for (int i = 0; i < 10000; i++) {
+        for (int i = 0; i < 1000; i++) {
             get();
         }
         long en = System.currentTimeMillis();

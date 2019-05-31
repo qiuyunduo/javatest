@@ -9,7 +9,7 @@ import java.lang.reflect.Field;
  * @Modified: null
  */
 public class AppleTest {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         Class cls = Apple.class;
         Field[] fields = cls.getDeclaredFields();
 

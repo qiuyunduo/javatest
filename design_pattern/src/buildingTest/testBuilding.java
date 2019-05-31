@@ -2,7 +2,7 @@ package buildingTest;
 
 /**
  * @Author: qiuyunduo
- * @Description: null
+ * @Description: 建造者模式
  * @Date: Created in 下午9:05 18-8-14
  * @Modified: null
  */
